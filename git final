@@ -1,0 +1,53 @@
+public class Finalname{
+   void changename(String name){
+   name="dinesh";
+   System.out.println(name);
+   }
+
+ public static void main(String [] args){
+   Finalname ganesh=new Finalname();
+   final String name="ganesh";
+   ganesh.changename(name);
+   //name="haja";
+   }
+}
+
+output as
+
+dinesh
+
+                                    Another program 
+
+public class Finalphone{
+   void realme(String name){
+   name="RealmeX";
+   System.out.println(name);
+   }
+
+  public static void main(String[]args){
+  Finalphone mobile=new Finalphone();
+  final String name="readme";
+  mobile.realme(name);
+  }
+}
+
+RealmeX
+
+//we want output as readme so the changes are done in the program as 
+
+public class Finalphone{
+   void realme(final String name){
+  // name="RealmeX";
+   System.out.println(name);
+   }
+ 
+  public static void main(String[]args){
+  Finalphone mobile=new Finalphone();
+  final String name="readme";
+  mobile.realme(name);
+  }
+}
+
+output as 
+
+readme
